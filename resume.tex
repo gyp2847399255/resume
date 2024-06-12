@@ -7,7 +7,7 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Yanpei Guo}
+\name{Guo Yanpei}
 
 \basicInfo{
   \email{gyp2847399255@gmail.com} \textperiodcentered\ 
@@ -18,8 +18,6 @@
 \datedsubsection{\textbf{Beihang University (BUAA)}, Beijing, China}{2019 -- 2023}
 \textit{B.S.} in School of Computer Science and Engineering, GPA: 3.78 / 4.00
 
-\textbf{TOEFL}: Reading 28, Listening 23, Speaking 22, Writing 27
-
 \section{\faBook\ Publication}
 
 \datedsubsection{\textbf{Fast RS-IOP Multivariate Polynomial Commitments and Verifiable Secret Sharing}}{}
@@ -29,9 +27,11 @@ Zongyang Zhang*, Weihan Li*, \textbf{Yanpei Guo*}, Kexin Shi, Sherman S. M. Chow
 
 \textbf{Achievements:}
 \begin{itemize}
-  \item A multivariate polynomial commitment from FRI, 5 times faster than prior work.
-  \item One-to-many proof for proving multiple evaluations to multiple verifiers, accelerating proving by 4 times.
-  \item An asynchronous verifiable secret sharing (AVSS) scheme FRISS with a better efficiency. 
+  \item Rolling-batch FRI technique, batch proving proximity of multiple vectors with Reed-Solomon codes of different length. 
+  \textbf{This technique has been applied in open-source zero-knowledge project Plonky3}.
+  \item PolyFRIM, a multivariate polynomial commitment from RS code, leveraging rolling batch FRI, 5 times faster than prior work.
+  \item One-to-many proof for proving multiple evaluations to multiple verifiers based on PolyFRIM, accelerating proving by 4 times.
+  \item An asynchronous verifiable secret sharing (AVSS) scheme FRISS with a dealer complexity of $O(n^2 \log n)$. 
 \end{itemize}
 \textbf{My Duty:} Protocol design and proof, experiments
 
@@ -44,7 +44,8 @@ Submitted to \textit{IEEE Transactions on Information Forensics and Security(TIF
 
 \textbf{Achievements:}
 \begin{itemize}
-  \item A plausible post-quantum secure range proof.
+  \item A plausible post-quantum secure range proof (RP).
+  \item A general bit-composition framework for ZK-RPs.
 \end{itemize}
 \textbf{My Duty:} Experiments
 
@@ -55,9 +56,10 @@ Submitted to \textit{S\&P, 2025}, First Author
 
 \textbf{Achievements:}
 \begin{itemize}
-  \item A multilinear polynomial commitment scheme that achieves nearly identical prover time, verifier time, and proof size as DEEP-FRI.
-  \item A batch variant of our PCS reduces the prover time by half while adding no additional overhead to the proof size.
-  \item A high-performance zero-knowledge argument system.
+  \item Deepfold, a multilinear polynomial commitment scheme that achieves nearly identical prover time, verifier time, and proof size as DEEP-FRI.
+  It has about 3.5 times faster prover time or 3 times smaller proof size than prior work.
+  \item A batch variant of Deepfold, reducing the prover time by half while adding no additional overhead to the proof size.
+  \item A high-performance zero-knowledge argument system, by combining Deepfold with Libra.
 \end{itemize}
 \textbf{My Duty:} Protocol design and proof, experiments, paper writing
 
@@ -68,12 +70,21 @@ Submitted to \textit{S\&P, 2025}, First Author
   \item Development: Database, Back-end, Front-end
 \end{itemize}
 
-\section{\faCertificate\ Honors and Awards}
-\textbf{National Cryptographic technology Competition}, 2023, \textit{First Prize}
+\section{\faTrophy\ Honors and Awards}
+\datedsubsection{\textbf{National Cryptographic technology Competition}}{2023, \textit{First Prize}}
 
-\textbf{Computer System Development Capability Competition, Operating System Kernel Design}, 2022,  \textit{First Prize, First Place}
+\datedsubsection{\textbf{Computer System Development Capability Competition, Operating System Kernel Design}}{2022,  \textit{First Prize, First Place}}
 
-\textbf{International Collegiate Programming Contest (ICPC) Asia Regional Contest Jinan Site}, 2020, \textit{Silver Medal, the 54th Place}
+\textbf{Achievements:}
+\begin{itemize}
+  \item Developed a microkernel operating system in C, compatible with QEMU and SiFive FU740 platforms.
+  \item Integrated support for Busybox, Lua, Redis, GCC, and Vim.
+  \item Significantly enhanced the FAT32 file system with optimizations that improve performance by up to two times compared to Linux in certain benchmarks.
+\end{itemize}
+
+\datedsubsection{\textbf{International Collegiate Programming Contest (ICPC) Asia Regional Contest Jinan Site}}{2020, \textit{Silver Medal, the 54th Place}}
+
+\datedsubsection{\textbf{The Chinese Mathematics Competitions for College Students (CMC)}}{2020, \textit{First Prize}}
 
 \section{\faHeartO\ TA experience}
 \datedsubsection{\textbf{Computer Organization}, Beijing, China}{2022.07 -- 2023.01}
@@ -82,6 +93,11 @@ Superviaor: Xiaopeng Gao, School of Computer Science and Engineering, Beihang Un
 Superviaor: Lei Wang, School of Computer Science and Engineering, Beihang University
 \datedsubsection{\textbf{Computer Organization}, Beijing, China}{2021.07 -- 2022.01}
 Superviaor: Xiaopeng Gao, School of Computer Science and Engineering, Beihang University
+
+
+\section{\faCertificate\ Language}
+\datedsubsection{\textbf{TOEFL}: Reading 28, Listening 23, Speaking 22, Writing 27}{2024.04}
+
 
 %% Reference
 %\newpage
